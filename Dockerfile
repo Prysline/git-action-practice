@@ -5,7 +5,7 @@ EXPOSE 5001
 
 VOLUME /app/logs
 WORKDIR /app
-ADD . /app
+ADD ./docker /app
 
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
